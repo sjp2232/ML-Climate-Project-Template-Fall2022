@@ -14,3 +14,27 @@ Possible data:
 This website from the USGS contains data for topography and structure information for the US. https://apps.nationalmap.gov/downloader/#/}
 
 This week I plan to look over the past work in GIS-based wind-farm placements.
+
+10/13/22
+Over the last week I looked over the prior research and the subject area of wind-farm placements is very promising - both in relation to prior research on that specific subject and the applications of ML algorithms on similar subjects such as charging station placements/warehouse planning. 
+
+On the topic: following my initial search (and given that I am a Texan), I learned that Texas is the leading state implementing wind energy solutions. Therefore, as the main growing market, I am choosing to focus only on working with Texas data to also make the scope smaller.
+
+
+As discussed in our emails, most of my time was spent on finding and downloading data that I could potentially utilize for the model. The following were my main requirements in the data:
+	-Mode in either longitude/latitude format or shapefile format (since I have used these two formats in my prior works)
+	-Source is dependable/reputable (as you will later find out, this meant only government sources that typically publically release the kind of data I need)
+
+The following are the data I have found so far:
+	-Elevation data for the Continental USA (shapefile)
+	-Road location data for Texas (shapefile)
+	-Structure location data for Texas (shapefile)
+	-Railroad location data for Texas (shapefile)
+	-Wind farm location data for Texas (longitude/latitude)
+	-Average wind speed by location data for Texas (longitude/latitude)
+
+Other data I plan to mention in my project:
+	-Official Energy Generation by source type such as wind/hydro/coal/etc. for USA (csv)
+	-Official Wind energy Generation for USA and Texas (csv)
+
+Given the green light from the instructures, I will continue down this project line. This week, I will now look to play around with the data itself to make sure it is usable.
