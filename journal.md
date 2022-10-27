@@ -38,3 +38,15 @@ Other data I plan to mention in my project:
 	-Official Wind energy Generation for USA and Texas (csv)
 
 Given the green light from the instructures, I will continue down this project line. This week, I will now look to play around with the data itself to make sure it is usable.
+
+10/20/22
+Two key new potential models I looked into (now basis on other energy planning/scoping):
+(1) Senocak and Goren describe a SVM method that uses GIS information (slope, elevation, current land use, river/lake/other water information) to 
+predict the potential Biomass energy production of a small geographic region. The GIS information they used was very specific and the SVM model only
+defined the basic production probability of the whole area as a whole (based on historical data). I will look into using thier 2-step method of using
+SVM or similar to first calculate the production probability of areas (after segmenting them) and then using GIS information for the potential calculation.
+
+(2) Luo use a Mixed Integer Second Order Cone Programming(MISOCP) method to plan a network of electric vehicle charging station. The constraint heavy method 
+is quite confusion to read and I will try to decypher and look into ways for applying to my problem. 
+
+Potential pivot using (2) -> Creating a plan of windfarms that can be completed in one swift completion plan.
