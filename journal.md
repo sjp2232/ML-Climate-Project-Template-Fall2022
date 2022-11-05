@@ -58,7 +58,7 @@ On pivot point mentioned above -> Most plans for wind farms use voronoi tesellat
 
 Added - Quick visualizing tools for the data previously collected.
 ToDo - Recreate the algorithm presented in the work by Qi, et al.
-![pic](https://github.com/sjp2232/ML-Climate-Project-Template-Fall2022/blob/main/etc/other/apso.jpg?raw=true)
+![pic](https://github.com/sjp2232/ML-Climate-Project-Template-Fall2022/blob/main/etc/other/apso.png?raw=true)
 
 
 11/3/22
