@@ -66,7 +66,7 @@ ToDo - Recreate the algorithm presented in the work by Qi, et al.
 Wake modelling - The aim of the wake model is to calculate the mean streamwise velocity distribution in the entire wind farm as a function of position. Think of wake turbulance that comes with planes as they move through the air. 
 
 https://www.houstonchronicle.com/business/energy/article/Feds-want-to-build-massive-wind-farm-larger-than-17319323.php - Get location of the new farm and define the planning for the turbine placements. Checked-  area is covered in the dataset for GIS/LIDAR from the govt.
-Mixed integer second-order cone programming - Included code for solver in ecos folder (use as package) in src. ECOS_BB. 
+Mixed integer second-order cone programming - Included code for solver in ecos folder (use as package) in src. ECOS_BB. pip install ecos. 
 	{
 	min  c'*x
 	s.t. A*x = b
