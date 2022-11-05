@@ -15,11 +15,11 @@ This website from the USGS contains data for topography and structure informatio
 
 This week I plan to look over the past work in GIS-based wind-farm placements.
 
+
 10/13/22
 Over the last week I looked over the prior research and the subject area of wind-farm placements is very promising - both in relation to prior research on that specific subject and the applications of ML algorithms on similar subjects such as charging station placements/warehouse planning. 
 
 On the topic: following my initial search (and given that I am a Texan), I learned that Texas is the leading state implementing wind energy solutions. Therefore, as the main growing market, I am choosing to focus only on working with Texas data to also make the scope smaller.
-
 
 As discussed in our emails, most of my time was spent on finding and downloading data that I could potentially utilize for the model. The following were my main requirements in the data:
 	-Mode in either longitude/latitude format or shapefile format (since I have used these two formats in my prior works)
@@ -50,3 +50,26 @@ SVM or similar to first calculate the production probability of areas (after seg
 is quite confusion to read and I will try to decypher and look into ways for applying to my problem. 
 
 Potential pivot using (2) -> Creating a plan of windfarms that can be completed in one swift completion plan.
+
+
+10/27/22
+
+On pivot point mentioned above -> Most plans for wind farms use voronoi tesellation model (pick areas for each turbine and expand to maximize output or minimize transmission moving). Check papers added.
+
+Added - Quick visualizing tools for the data previously collected.
+ToDo - Recreate the algorithm presented in the work by Qi, et al.
+![pic](https://github.com/sjp2232/ML-Climate-Project-Template-Fall2022/blob/main/etc/other/apso.jpg?raw=true)
+
+
+11/3/22
+
+Wake modelling - The aim of the wake model is to calculate the mean streamwise velocity distribution in the entire wind farm as a function of position. Think of wake turbulance that comes with planes as they move through the air. 
+
+https://www.houstonchronicle.com/business/energy/article/Feds-want-to-build-massive-wind-farm-larger-than-17319323.php - Get location of the new farm and define the planning for the turbine placements. Checked-  area is covered in the dataset for GIS/LIDAR from the govt.
+Mixed integer second-order cone programming - Included code for solver in ecos folder (use as package) in src. ECOS_BB. 
+	{
+	min  c'*x
+	s.t. A*x = b
+     G*x <=_K h
+     some x_i in {0,1}
+     some x_j integer}
