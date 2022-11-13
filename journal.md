@@ -73,3 +73,12 @@ Mixed integer second-order cone programming - Included code for solver in ecos f
      G*x <=_K h
      some x_i in {0,1}
      some x_j integer}
+
+11/12/22
+
+Based on the location mentioned in the news letter mentioned above, I located the necessary data as defined by Wu, et al. in the "A synchronization..." paper. That is, I located wind data from buoy in the location of the windfarm area and collected the wind data (this includes the direction, the speeds m/s and the direction's probability). Based on the location in the article, I then created a gridded 50 by 50 location matrix of 140meters x 140meters blocks that total to 7km x 7km area in the Gulf of Mexico. This lines up with Dhoot's and other similar approaches' interpretation of the Offshore Windfarm planning problem that looks to optimize the binary matrix of the same shape that defines the wind turbine locations (0/1 for whether the block contains a wind turbine in the center). This interpretation can also be similarly approached to truncate the Jensen's Wake turbulance model by blocking 5 spaces between the turbine locations so that wake of turbines in any direction do not impact the other turbine. That said, I will look to extend the method from Dhoot using interaction matrix W to Wu's wake turbulance calculation method - this allows the model to also take into account the wind direction/speeds into turbine placements. 
+Check data and scripts as added in the src folder.
+
+Currently - Recreate the genetic algorithm method mentioned by Wu to stand as the base model to compare my compact/single pass model to that will combine all steps of turbine placement/cable management/substation placement. 
+
+Next week - Find method to quantify the costs of cable connections (to be minimized). 
