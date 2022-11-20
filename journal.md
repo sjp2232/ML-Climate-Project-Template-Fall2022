@@ -82,3 +82,10 @@ Check data and scripts as added in the src folder.
 Currently - Recreate the genetic algorithm method mentioned by Wu to stand as the base model to compare my compact/single pass model to that will combine all steps of turbine placement/cable management/substation placement. 
 
 Next week - Find method to quantify the costs of cable connections (to be minimized). 
+
+
+11/19/22
+
+This week I connected with Dafne to confirm the mode and overview of the project in regard to the course's expectations. This included questions regarding the nature of the problem formualtion itself and my project thus far. The grid view and the rest of the formulation in connection with the turbine calculations are standard in the industry and inline with many other physical simulations with area found in works (think the CNN used in calculating the greenhouse effects of coal mines). Questions around the wake effect modelling are fine in the interaction-matrix based approach (rest not confirmed due to hard to read - will check later). Cable objective function under some critic due to approaches that try to minimize loads? - Not necessary or correct since each line for turbines connected independently anyway and will take care of load calculations in that regard. Therefore, approach to GA with heuristic (value defining function) defined with A*(1/2*(L(array))+(L(export))) where A is the weighting factor for the cables by length and L() is the lengths respectively - take care of the cable requirements. In this, L(array) will be calculated with the Minimum spanning tree and L(export) will be distance to shore from the most-connected node in the tree. Then, we can use the secondary method to calcualte the actual cable configuration and placement of substation. The values for the mutation and crossover probabilities are standard. 
+
+Next week - Generate some premilinary results using above approach to discuss with Alp.
