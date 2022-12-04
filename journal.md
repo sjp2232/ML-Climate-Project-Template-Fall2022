@@ -96,3 +96,9 @@ Next week - Generate some premilinary results using above approach to discuss wi
 This week I completed the definitions for the GA - the mutations and the crossover methods (check the scripts in .ipynb files). The functions for each of the functions have to be carefully defined since we have to have viable children (contain only 50 turbines). This means we have to play around with the standard definitons such that they can become viable - check each function definitions for those changes. Also added scripts for processing data for usability in creating charts (scripts also included).
 
 Next week - Run the tests such that best methods for mutations and crossovers are defined. Use those to then get the best configurations using multiple objective functions. This will also include recreating the cable defining method to test the configurations created. Finally complete the case study for the Texas location with 200 turbines.
+
+12/03/22
+
+This week I completed the general recreation (with modifications based on specificity of the problem) of the Genetic Algortihm for wake model optimization. This meant recreating all the functions required to explore the problem from an algorithmic view (all done by me manually since they are not too difficult). 
+
+In preparation of the demo next week, I will finish up the implimentation of the NSGA2 model for distance/wake multi-optimization and create graphs/images. This will include writing all the required functions myself per the requirements of the problem.  
