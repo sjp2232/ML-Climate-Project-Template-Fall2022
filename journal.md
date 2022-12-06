@@ -97,8 +97,14 @@ This week I completed the definitions for the GA - the mutations and the crossov
 
 Next week - Run the tests such that best methods for mutations and crossovers are defined. Use those to then get the best configurations using multiple objective functions. This will also include recreating the cable defining method to test the configurations created. Finally complete the case study for the Texas location with 200 turbines.
 
+
 12/03/22
 
 This week I completed the general recreation (with modifications based on specificity of the problem) of the Genetic Algortihm for wake model optimization. This meant recreating all the functions required to explore the problem from an algorithmic view (all done by me manually since they are not too difficult). 
 
 In preparation of the demo next week, I will finish up the implimentation of the NSGA2 model for distance/wake multi-optimization and create graphs/images. This will include writing all the required functions myself per the requirements of the problem.  
+
+
+12/06/22 (sub-update for the presentation)
+
+In preparation of the project presentation, I created multiple illustrations of the basic single objective GA and new multi objective GAs. And then I presented the preliminary results from small iteration convergences. Next week, I will formulate the case study for the final leg of the project. Main pain points currently are the k-means methods incorporation such that the complexity does not drastically increase to un-dealable leaves.
