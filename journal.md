@@ -108,3 +108,7 @@ In preparation of the demo next week, I will finish up the implimentation of the
 12/06/22 (sub-update for the presentation)
 
 In preparation of the project presentation, I created multiple illustrations of the basic single objective GA and new multi objective GAs. And then I presented the preliminary results from small iteration convergences. Next week, I will formulate the case study for the final leg of the project. Main pain points currently are the k-means methods incorporation such that the complexity does not drastically increase to un-dealable leaves.
+
+12/10/22 (final code update)
+
+Added a pseudo multi-objective method that calculates a scaled values for both and adds them together. Cleaned up many parts of the scripts and prepared a folder to use to store all the resources for creating illustrations for the final paper. Next week: Write the paper and create illustrations
